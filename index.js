@@ -31,6 +31,6 @@ app.get('/dashboard', checkAuth, (req, res) => {
 })
 
 
-server.listen('3000', (err) => {
+server.listen(process.env.PORT || 3000, (err) => {
     !err ? console.log('listening') : console.error(err);
 })
